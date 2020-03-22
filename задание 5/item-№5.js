@@ -1,32 +1,29 @@
 'use strict';
 
-let delivery = prompt('Для оформления доставки, введите название страны: ');
+let country, credit = 0;
+const delivery = prompt('Для оформления доставки, введите название страны: ');
 
-switch (delivery) {
-    case 'Китай':
-        let country = 'Китай';
-        let credit = 100;
+switch (delivery.toLowerCase()) {
+    case 'китай':
+        credit = 100;
+        alert(`Доставка в ${delivery} будет стоить ${credit} кредитов`);
         break;
-    case 'Чили':
-        let country = 'Чили';
-        let credit = 250;
+    case 'кили':
+        credit = 250;
+        alert(`Доставка в ${delivery} будет стоить ${credit} кредитов`);
         break;
-    case 'Австралия':
-        let country = 'Австралия';
-        let credit = 170;
+    case 'австралия':
+        credit = 170;
+        alert(`Доставка в ${delivery} будет стоить ${credit} кредитов`);
         break;
-    case 'Индия':
-        let country = 'Индия';
-        let credit = 80;
+    case 'индия':
+        credit = 80;
+        alert(`Доставка в ${delivery} будет стоить ${credit} кредитов`);
         break;
-    case 'Ямайка':
-        let country = 'Ямайка';
-        let credit = 120;
+    case 'ямайка':
+        credit = 120;
+        alert(`Доставка в ${delivery} будет стоить ${credit} кредитов`);
         break;
-}
-
-if (delivery === country) {
-    alert('Доставка в ' + country + ' будет стоить ' + credit + ' кредитов');
-} else {
-    alert('В вашей стране доставка не доступна');
+    default:
+        alert('В вашей стране доставка не доступна');
 }
