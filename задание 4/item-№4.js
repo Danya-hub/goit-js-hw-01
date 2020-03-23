@@ -13,6 +13,6 @@ if (quantityDroid === null) {
         alert('Недостаточно средств на счету!');
     } else {
         totalPrice = credits - totalPrice;
-        alert('Вы купили ' + quantityDroid + ' дроидов, на счету осталось ' + totalPrice + ' кредитов');
+        alert(`Вы купили ${quantityDroid} дроидов, на счету осталось ${totalPrice} кредитов`);
     }
 }
