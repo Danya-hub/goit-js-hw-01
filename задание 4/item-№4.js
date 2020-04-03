@@ -5,7 +5,6 @@ let pricePerDroid = 3000;
 
 let quantityDroid = prompt('Какое количество дроидов вы хотите купить?');
 
-
  if (quantityDroid === null) {
     alert('Отменено пользователем!');
 } else {
